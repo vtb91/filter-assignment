@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <!-- Remember to update page title -->
+    <title>US Housing</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap|Signika" rel="stylesheet">
+
+    <!-- Your styles should be called here -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <h1> Home prices soar in the latest US housing boom</h1>
+    <h2> By: Violetta Torres-Barón </h2>
+
+    <section class="large-photo">
+      <figure>
+        <img class="large-photo" src="sale.jpeg" alt="social" width="700">
+        <figcaption>A 'sale' sign advertises a home in Alexandria, Virginia. REUTERS/Molly Riley</figcaption>
+      </figure>
+    </section>
+
+    <p>
+      Home price valuations in the United States climbed for the 70th-consecutive month signifying a booming housing market, particularly in the solid economies of the West and other areas scarred by the housing crises a decade ago.
+    </p>
+    <p>
+      Data released on Tuesday from the <a href="https://us.spindices.com/index-family/real-estate/sp-corelogic-case-shiller">S&P CoreLogic Case-Shiller National Home Price Index,</a> which compares the prices of single-family homes across the US, rose
+      6.3% in February, up from a 6.1% year-over-year increase reported in January.
+    </p>
+    <p>
+      National home prices have been rising largely uninterrupted for the past five years, and the growth shows few signs of stopping any time soon because supply is constrained. Homes have now gained back the value lost during the Great Recession and are now
+      as high as they’ve ever been. Last month’s data reported a 6.2% annual gain for all nine US census divisions in January, down from 6.3% the previous month.
+    </p>
+    <p>
+      Seattle has held the title of the nation’s hottest housing market for 18 months. Las Vegas and San Francisco are the second and third fastest-rising housing markets and the only other markets with double digit annual gains.
+    </p>
+
+    <div class="container">
+      <h2> Top 20 housing markets getting increasingly pricier </h2>
+      <p>Cities on the West Coast lead in national home price growth</p>
+      <input id="filter" class="form-control" type="text" placeholder="Enter search terms...">
+      <br>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Metro</th>
+            <th>Monthly Change (Jan-Feb)</th>
+            <th>12-month change</th>
+          </tr>
+        </thead>
+        <tbody id="content">
+          <tr>
+            <td>Seattle</td>
+            <td>1.70% </td>
+            <td>12.70%</td>
+          </tr>
+          <tr>
+            <td>Las Vegas</td>
+            <td>1.00%</td>
+            <td>11.60%</td>
+          </tr>
+          <tr>
+            <td>San Francisco </td>
+            <td>1.00%</td>
+            <td>10.10%</td>
+          </tr>
+          <tr>
+            <td>Denver</td>
+            <td>1.20%</td>
+            <td>8.40%</td>
+          </tr>
+          <tr>
+            <td>Detroit</td>
+            <td>1.10%</td>
+            <td>8.40%</td>
+          </tr>
+          <tr>
+            <td>Los Angeles</td>
+            <td>1.00%</td>
+            <td>8.30%</td>
+          </tr>
+          <tr>
+            <td>San Diego</td>
+            <td>1.10%</td>
+            <td>7.60%</td>
+          </tr>
+          <tr>
+            <td>Tampa</td>
+            <td>0.30%</td>
+            <td>7.10%</td>
+          </tr>
+          <tr>
+            <td>Portland</td>
+            <td>0.40%</td>
+            <td>6.70%</td>
+          </tr>
+          <tr>
+            <td>Atlanta</td>
+            <td>0.40%</td>
+            <td>6.50%</td>
+          </tr>
+          <tr>
+            <td>Charlotte</td>
+            <td>0.80%</td>
+            <td>6.40%</td>
+          </tr>
+          <tr>
+            <td>Dallas</td>
+            <td>0.60%</td>
+            <td>6.40%</td>
+          </tr>
+          <tr>
+            <td>Phoenix</td>
+            <td>0.90%</td>
+            <td>6.40%</td>
+          </tr>
+          <tr>
+            <td>New York</td>
+            <td>0.50%</td>
+            <td>6.00%</td>
+          </tr>
+          <tr>
+            <td>Minneapolis</td>
+            <td>0.30%</td>
+            <td>5.80%</td>
+          </tr>
+          <tr>
+            <td>Boston</td>
+            <td>0.70%</td>
+            <td>5.70%</td>
+          </tr>
+          <tr>
+            <td>Miami</td>
+            <td>0.60%</td>
+            <td>4.60%</td>
+          </tr>
+          <tr>
+            <td>Cleveland</td>
+            <td>0.40%</td>
+            <td>4.10%</td>
+          </tr>
+          <tr>
+            <td>Chicago</td>
+            <td>0.10%</td>
+            <td>2.60%</td>
+          </tr>
+          <tr>
+            <td>Washington</td>
+            <td>0.40%</td>
+            <td>2.40%</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <P>
+      “The West Coast has a lot of built-in advantages that make it a pretty attractive place to live to begin with: The weather is relatively pleasant, the scenery is gorgeous and the quality of life can be quite high.” said Aaron Terrazas, Senior Economist
+      at Zillow. “Additionally, many West Coast cities are experiencing tremendous job growth, particularly tech hotbeds like Seattle and the Bay Area. Jobs in tech often pay very well, and these workers can typically afford to spend more on housing.”
+    </P>
+    <p>
+      As Millenials enter their prime home buying years during a period of strong economic performance –demand for homes are exceeding what is available in the market, thus generating high prices.
+    </p>
+    <p>
+      “The housing market looks largely healthy from a 50,000-foot view” said Terrazas. “But on the ground, the situation is much different, especially for younger, first-time buyers or buyers of more modest means”.
+    </p>
+
+    <!-- Your javascript should be called here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+
+</html>
